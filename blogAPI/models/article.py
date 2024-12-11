@@ -1,10 +1,9 @@
-class Article :
+from pydantic import BaseModel
+
+
+class Article(BaseModel):
     id:int 
     title:str
     content:str
 
-    def __init__(self, id: int, title: str, content: str): 
-        self.Id = id
-        self.Title = title
-        self.Content = content   
-    
+   
